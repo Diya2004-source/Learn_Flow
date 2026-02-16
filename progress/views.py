@@ -5,6 +5,6 @@ from .serializers import LessonProgressSerializer
 
 # Create your views here.
 class LessonProgressViewSet(viewsets.ModelViewSet):
-    viewsets = LessonProgress.objects.all()
+    queryset = LessonProgress.objects.all()
     serializer_class = LessonProgressSerializer
 

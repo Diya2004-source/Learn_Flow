@@ -5,13 +5,13 @@ from .serializers import QuestionSerializer,QuizAttemptSerializer,QuizSerializer
 
 # Create your views here.
 class QuizViewSet(viewsets.ModelViewSet):
-    viewsets = Quiz.objects.all()
+    queryset = Quiz.objects.all()
     serializer_class = QuizSerializer
 
 class QuestionViewSet(viewsets.ModelViewSet):
-    viewsets = Question.objects.all()
+    queryset = Question.objects.all()
     serializer_class = QuestionSerializer
 
 class QuizAttemptViewSet(viewsets.ModelViewSet):
-    viewsets = QuizAttempt.objects.all()
+    queryset = QuizAttempt.objects.all()
     serializer_class = QuizAttemptSerializer

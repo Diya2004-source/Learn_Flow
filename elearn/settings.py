@@ -88,7 +88,7 @@ DATABASES = {
         'NAME': 'learn_flow',
         'USER': 'root',
         'PASSWORD':'',
-        'HOST':'localhost',
+        'HOST':'localhost',   #127.0.0.1
         'PORT' : '3306',
     }
 }
@@ -143,3 +143,7 @@ REST_FRAMEWORK = {
         'rest_framework.parsers.JSONParser',
     ]
 }
+
+#for images
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR/'media'
